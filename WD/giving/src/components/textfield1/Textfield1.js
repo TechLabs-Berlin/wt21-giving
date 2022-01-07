@@ -1,10 +1,10 @@
 import React from 'react'
 import './Textfield1.css'
 
-const Textfield1 = (props) => {
+const Textfield1 = ({title}) => {
     return (
-        <div className='container'>
-            <input placeholder={props.title}></input>
+        <div>
+            <input className='textfield-1' placeholder={title}></input>
         </div>
     );
 };

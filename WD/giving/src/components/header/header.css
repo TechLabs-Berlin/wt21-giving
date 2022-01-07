@@ -1,0 +1,26 @@
+img {
+    width: 60%;
+}
+
+.header {
+    box-sizing: border-box;
+    overflow-y: auto;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.icon-back {
+    display: inline-flex;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.header-logo {
+    display: inline-flex;
+    text-align: center;
+    margin-top: 10px;
+}
