@@ -1,0 +1,8 @@
+input {
+  font-family: "Public Sans", sans-serif;
+  color: grey;
+  width: 250px;
+  border: none;
+  border-bottom: 1px solid grey;
+  letter-spacing: 0.5px;
+}
