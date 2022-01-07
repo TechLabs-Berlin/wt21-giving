@@ -1,0 +1,25 @@
+.icon-payment {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.creditcard {
+    display: inline-flex;
+    text-align: center;
+    margin: 30px;
+}
+
+.paypal {
+    display: inline-flex;
+    text-align: center;
+    margin: 30px;
+}
+
+.bank {
+    display: inline-flex;
+    text-align: center;
+    margin: 30px;
+}

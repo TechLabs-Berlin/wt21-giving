@@ -1,11 +1,20 @@
 import React from 'react';
-import Logo from './components/logo/Logo';
-import Button1 from './components/button1/Button1';
-import Textfield1 from './components/textfield1/Textfield1';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Signup from './pages/signup/signup';
+import Payment from './pages/payment/payment';
+import Intro from './pages/intro/intro';
+import Login from './pages/login/login';
 
 const app = () => {
     return (
-        <div></div>
+        <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Intro />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/payment" element={<Payment />} />
+            <Route path="/login" element={<Login />} />
+        </Routes>
+        </BrowserRouter>
     );
 };
 

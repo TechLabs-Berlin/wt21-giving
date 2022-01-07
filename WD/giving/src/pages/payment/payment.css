@@ -1,0 +1,16 @@
+.paymentpage {
+    font-family: "Public Sans", sans-serif;
+    color: grey;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.skip {
+    color: grey;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}

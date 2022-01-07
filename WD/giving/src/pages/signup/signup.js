@@ -1,12 +1,16 @@
 import React from 'react';
-import Logo from '../../components/logo/Logo';
+import Header from '../../components/header/header';
 import Button1 from '../../components/button1/Button1';
 import Textfield1 from '../../components/textfield1/Textfield1';
+import {Link} from 'react-router-dom';
+import './signup.css'
 
 const signup = () => {
     return (
-        <div>
-            <Logo />
+        <div className='signup'>
+            <Link to={`/`}>
+                <Header />
+            </Link>
             <form>
                 <label>
                     <Textfield1 title='First Name'/>
@@ -23,7 +27,10 @@ const signup = () => {
                     <Textfield1 title='Password Confirmation'/>
                 </label>
             </form>
-            <Button1 />
+            < br />
+            <Link to={`/payment`}>
+                <Button1 title='Continue'/>
+            </Link>
         </div>
     );
 };
