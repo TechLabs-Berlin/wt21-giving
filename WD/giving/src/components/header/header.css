@@ -1,22 +1,21 @@
-img {
-    width: 60%;
+.header {
+    text-align: center;
 }
 
-.header {
+.header-container {
     box-sizing: border-box;
-    overflow-y: auto;
-    z-index: 1;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
+    text-align: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin: auto;
 }
 
 .icon-back {
     display: inline-flex;
     text-align: center;
-    margin-left: 25px;
-    margin-top: 5px;
+    color: grey;
+    margin: 10px;
 }
 
 .header-logo {
