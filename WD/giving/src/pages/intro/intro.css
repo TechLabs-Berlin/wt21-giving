@@ -2,13 +2,9 @@
   text-align: center;
 }
 
-.intro-organisationimage {
-  background-color: lightgrey;
-  text-align: center;
-  height: 500px;
-  margin: 20px;
-  margin-top: 50px;
-  border-radius: 20px;
+.fakepicture {
+  color: grey;
+  margin-bottom: 30px;
 }
 
 .slider-circles {
