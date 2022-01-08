@@ -1,0 +1,29 @@
+.intropage {
+  text-align: center;
+}
+
+.intro-organisationimage {
+  background-color: lightgrey;
+  text-align: center;
+  height: 500px;
+  margin: 20px;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.slider-circles {
+  margin: 10px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.single-circle {
+  display: inline-flex;
+  text-align: center;
+  margin: 10px;
+  color: grey;
+  text-align: center;
+}
