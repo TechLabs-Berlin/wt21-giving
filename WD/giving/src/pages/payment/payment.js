@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Header from '../../components/header/header';
-import Button1 from '../../components/button1/Button1';
+import Button from '../../components/button/Button';
 import Paymenticons from '../../components/payment-icons/payment-icons';
 import Textfield2 from '../../components/textfield2/Textfield2';
 import './payment.css'
@@ -26,7 +26,7 @@ const payment = () => {
             </form>
             < br />
             <Link to={`/login`}>
-                <Button1 title='Add Payment Method and Sign in'/>
+                <Button text='Add Payment Method and Sign in'/>
             </Link>
             <Link to={`/login`}>
                 <button className='skip'>Skip for now</button>
