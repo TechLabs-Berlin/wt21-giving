@@ -1,16 +1,17 @@
 import React from 'react'
 import './Button.css'
 
-const Button = (props) => {
+const Button = ({color, text}) => {
     return (
         <div className='container'>
-            <button>{props.title}</button> 
+            <button style={{ backgroundColor: color }} >{text}</button> 
         </div>
     );
 };
 
 Button.defaultProps = {
-    title: 'Continue'
+    text: 'Continue',
+    color: 'grey',
 }
 
 export default Button;

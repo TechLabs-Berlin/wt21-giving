@@ -26,7 +26,7 @@ const payment = () => {
             </form>
             < br />
             <Link to={`/login`}>
-                <Button title='Add Payment Method and Sign in'/>
+                <Button text='Add Payment Method and Sign in'/>
             </Link>
             <Link to={`/login`}>
                 <button className='skip'>Skip for now</button>

@@ -27,7 +27,7 @@ const intro = () => {
                 </div>
             </div>
             <Link to={`/signup`}>
-                <Button title='Get Started'/>
+                <Button text='Get Started'/>
             </Link>
         </div>
     );

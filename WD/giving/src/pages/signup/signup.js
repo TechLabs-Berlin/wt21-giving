@@ -29,7 +29,7 @@ const signup = () => {
             </form>
             < br />
             <Link to={`/payment`}>
-                <Button title='Continue'/>
+                <Button text='Continue'/>
             </Link>
         </div>
     );
