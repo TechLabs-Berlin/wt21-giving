@@ -1,7 +1,7 @@
 import React from 'react'
-import './Button1.css'
+import './Button.css'
 
-const Button1 = (props) => {
+const Button = (props) => {
     return (
         <div className='container'>
             <button>{props.title}</button> 
@@ -9,8 +9,8 @@ const Button1 = (props) => {
     );
 };
 
-Button1.defaultProps = {
+Button.defaultProps = {
     title: 'Continue'
 }
 
-export default Button1;
+export default Button;

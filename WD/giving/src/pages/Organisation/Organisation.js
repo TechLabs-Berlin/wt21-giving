@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../components/logo/Logo';
-import Button1 from '../../components/button1/Button1';
+import Button from '../../components/button/Button';
 import '/FotoOrganisation.js';
 import OrganisationInfo from '../components/OrganisationInfo/OrganisationInfo';
 
@@ -13,7 +13,7 @@ const organisation = () => {
                 <h1>Organisations Name</h1>
                 <h2>Website</h2>
             </div>
-            <Button1 />
+            <Button />
         </div>
     );
 };
