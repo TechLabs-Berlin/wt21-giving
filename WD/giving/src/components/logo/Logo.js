@@ -1,6 +1,6 @@
 import React from 'react';
 import './Logo.css';
-import {ReactComponent as ReactLogo} from './pictures/Giving-svg.svg';
+import {ReactComponent as ReactLogo} from './pictures/GIVING_V2-svg.svg';
 
 const Logo = () => {
     return (

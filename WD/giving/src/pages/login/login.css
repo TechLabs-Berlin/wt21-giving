@@ -1,0 +1,21 @@
+.loginpage {
+  text-align: center;
+  font-family: "Public Sans", sans-serif;
+  color: #111111;
+}
+
+.login-logo {
+  margin-top: 150px;
+  margin-bottom: 60px;
+}
+
+.password {
+  margin-bottom: 150px;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+.newdonor {
+  font-size: 22px;
+  text-decoration: underline;
+}

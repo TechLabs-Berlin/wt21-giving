@@ -1,16 +1,56 @@
 .paymentpage {
-    font-family: "Public Sans", sans-serif;
-    color: grey;
-    text-align: center;
+  font-family: "Public Sans", sans-serif;
+  color: grey;
+  text-align: center;
 }
 
-h3 {
-    text-align: center;
+.paymentpage h3 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .skip {
-    color: grey;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
+  color: grey;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.paymenticons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.paymentextfield {
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.paymentcontainer {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.paymentextfield2 {
+  display: inline-flex;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.paymentextfield3 {
+  display: inline-flex;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.paymenttextfields {
+  margin-bottom: 50px;
 }
