@@ -11,6 +11,7 @@ const signup = () => {
             <Link to={`/`}>
                 <Header />
             </Link>
+            <div className='signup-container'>
             <form>
                 <label>
                     <Textfield1 title='First Name'/>
@@ -31,6 +32,7 @@ const signup = () => {
             <Link to={`/payment`}>
                 <Button text='Continue'/>
             </Link>
+            </div>
         </div>
     );
 };

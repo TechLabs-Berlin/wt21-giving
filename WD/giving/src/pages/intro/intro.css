@@ -1,14 +1,19 @@
 .intropage {
   text-align: center;
 }
+.intro-logo {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 
 .fakepicture {
   color: grey;
-  margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .slider-circles {
   margin: 10px;
+  margin-bottom: 40px;
   box-sizing: border-box;
   display: inline-flex;
   justify-content: space-between;

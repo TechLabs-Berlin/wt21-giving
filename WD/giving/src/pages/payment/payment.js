@@ -15,16 +15,25 @@ const payment = () => {
             </Link>
             < br />
             <h3>Add Payment Method</h3>
-            <Paymenticons />
-            <form>
-                <label>
+            <div className='paymenticons'>
+                <Paymenticons />
+            </div>
+            <div className='paymenttextfields'>
+                <div className='paymentextfield'>
                     <Textfield2 title='Cardholder Name'/>
+                </div>
+                <div className='paymentextfield'>
                     <Textfield2 title='Card Number'/>
-                    <Textfield2 title='Expiry Date'/>
-                    <Textfield2 title='CVV'/>
-                </label>
-            </form>
-            < br />
+                </div>
+                <div className='paymentcontainer'>
+                    <div className='paymentextfield2'>
+                        <Textfield2 width='130px' title='Expiry Date'/>
+                    </div>
+                    <div className='paymentextfield3'>
+                        <Textfield2 width='130px' title='CVV'/>
+                    </div>
+                </div>
+            </div>
             <Link to={`/login`}>
                 <Button text='Add Payment Method and Sign in'/>
             </Link>

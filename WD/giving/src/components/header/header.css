@@ -1,25 +1,25 @@
 .header {
-    text-align: center;
+  text-align: center;
 }
 
 .header-container {
-    box-sizing: border-box;
-    display: inline-flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
-    margin: auto;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: auto;
 }
 
 .icon-back {
-    display: inline-flex;
-    text-align: center;
-    color: grey;
-    margin: 10px;
+  display: inline-flex;
+  text-align: center;
+  color: grey;
+  padding-right: 10px;
 }
 
 .header-logo {
-    display: inline-flex;
-    text-align: center;
-    margin-top: 10px;
+  display: inline-flex;
+  text-align: center;
+  margin-top: 10px;
 }
