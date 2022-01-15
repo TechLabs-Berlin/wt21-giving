@@ -4,6 +4,7 @@ import Signup from './pages/signup/signup';
 import Payment from './pages/payment/payment';
 import Intro from './pages/intro/intro';
 import Login from './pages/login/login';
+import ExplorePage from './pages/ExplorePage/ExplorePage';
 
 const app = () => {
     return (
@@ -13,6 +14,7 @@ const app = () => {
             <Route path="/signup" element={<Signup />} />
             <Route path="/payment" element={<Payment />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/ExplorePage" element={<ExplorePage />} />
         </Routes>
         </BrowserRouter>
     );
