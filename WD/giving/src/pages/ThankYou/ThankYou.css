@@ -6,3 +6,15 @@
 .logoOrganisation {
   width: max-content;
 }
+
+.button {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  border: 1px solid #ff9045;
+  box-sizing: border-box;
+  border-radius: 28px;
+}
