@@ -12,6 +12,7 @@ const organisation = () => {
             <div className='Organisation'>
                 <h1>Organisations Name</h1>
                 <h2>Website</h2>
+                <OrganisationInfo />
             </div>
             <Button1 />
         </div>
