@@ -1,0 +1,60 @@
+.footer {
+  position: absolute;
+  width: 390px;
+  height: 48px;
+  left: 0px;
+  top: 796px;
+  background: #c4c4c4;
+}
+
+.events {
+  position: absolute;
+  width: 47px;
+  height: 14px;
+  left: 45px;
+  top: 819px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.organisations {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 187px;
+  top: 802px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  background: url(home.png);
+}
+
+.feeds {
+  position: absolute;
+  width: 47px;
+  height: 14px;
+  left: 45px;
+  top: 819px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
