@@ -1,5 +1,5 @@
 import React from "react";
-import { HiOutlineAdjustments } from 'react-icons'
+import { HiOutlineAdjustments } from 'react-icons/hi'
 
 const filter = () => {
     return (
