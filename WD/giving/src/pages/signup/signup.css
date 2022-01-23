@@ -1,13 +1,13 @@
 .signup {
-        font-family: "Public Sans", sans-serif;
-        color: grey;
-        text-align: center;
+  font-family: "Public Sans", sans-serif;
+  color: grey;
+  text-align: center;
+}
+
+.signup-container {
+  margin-top: 60px;
 }
 
 input:focus {
-    outline: none;
-}
-
-form {
-    margin-top: 60px;
+  outline: none;
 }

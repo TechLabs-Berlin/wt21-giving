@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../../components/header/header';
-import Button1 from '../../components/button1/Button1';
+import Button from '../../components/button/Button';
 import Textfield1 from '../../components/textfield1/Textfield1';
 import {Link} from 'react-router-dom';
 import './signup.css'
@@ -11,6 +11,7 @@ const signup = () => {
             <Link to={`/`}>
                 <Header />
             </Link>
+            <div className='signup-container'>
             <form>
                 <label>
                     <Textfield1 title='First Name'/>
@@ -29,8 +30,9 @@ const signup = () => {
             </form>
             < br />
             <Link to={`/payment`}>
-                <Button1 title='Continue'/>
+                <Button text='Continue'/>
             </Link>
+            </div>
         </div>
     );
 };

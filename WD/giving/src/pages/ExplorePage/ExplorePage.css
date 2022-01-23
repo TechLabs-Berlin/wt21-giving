@@ -1,0 +1,17 @@
+.ExplorePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ExplorePage input {
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+}
+
+p {
+  margin: 10px;
+  font-size: 18px;
+}
