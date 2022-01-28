@@ -1,21 +1,27 @@
 import React from 'react';
 import Header from '../../components/header/header'
-import Logo from '../../components/logo/Logo';
 import Button from '../../components/button/Button';
 import '/FotoOrganisation.js';
 import SocialFollow from '../../components/SocialFollow/SocialFollow'
 import Textfield3 from '../../components/textfield3/Textfield3'
+import { ImageBackground, Text, View } from "react-native";
+
+const image = { FotoOrganisation };
 
 const ThankYou = () => {
     return (
-        <div>
-            <Logo />
+        <div className='thankyoupage'>
+            <div className='thankyouheader'>
             <Header />
-            
-            <div className='Thanks'>
-            <h1>THANK YOU</h1>
-            <img className='LogoOrganisation' alt='Logo Organisation'/>
             </div>
+            <div className='thankyou-picture'>
+             <View style={styles.container}>
+            <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+            <Text style={styles.text}>Thank you for your donation</Text>
+             </ImageBackground>
+             </View>
+            </div>
+            
             <Link to={`/Organisation`}>
                 <Button text='Back to Organisation Page'/>
             </Link>
@@ -33,5 +39,23 @@ const ThankYou = () => {
         </div>
     );
 };
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      flexDirection: 'column',
+    },
+    image: {
+      flex: 1,
+      justifyContent: 'center',
+    },
+    text: {
+      color: 'white',
+      fontSize: 20,
+      fontWeight: 'normal',
+      textAlign: 'left',
+      backgroundColor: '#000000a0',
+    },
+  });
 
 export default ThankYou;
