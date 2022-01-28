@@ -1,68 +1,27 @@
-.logo {
-  position: absolute;
+.organisationpage {
+  text-align: center;
 }
-.organisationName {
-  position: absolute;
-  width: 156px;
-  height: 28px;
-  left: 23px;
-  top: 277px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.484848px;
-
-  color: #000000;
+.header {
+  margin-top: auto;
+}
+.organisation-name {
+  text-align: left;
 }
 
 .h2 {
-  position: absolute;
-  width: 156px;
-  height: 28px;
-  left: 23px;
-  top: 277px;
+  text-align: left;
+}
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  display: flex;
+.organisationinfos {
+  text-align: left;
+}
+
+.socialfollow {
+  margin: 10px;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-between;
   align-items: center;
-  letter-spacing: 0.484848px;
-
-  color: #000000;
-}
-
-.organisationInfo {
-  position: absolute;
-  width: 320px;
-  height: 160px;
-  left: 23px;
-  top: 365px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 23px;
-  letter-spacing: 0.484848px;
-
-  color: #000000;
-}
-
-.buttonDonate {
-  position: absolute;
-  width: 250px;
-  height: 50px;
-  left: 658px;
-  top: 253px;
-
-  background: #ff9045;
-  border-radius: 42px;
+  text-align: center;
 }
