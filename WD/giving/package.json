@@ -15,6 +15,9 @@
     "react-scripts": "^3.0.1",
 =======
     "react-scripts": "5.0.0",
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     "react-select": "^5.2.2",
     "web-vitals": "^2.1.2"
