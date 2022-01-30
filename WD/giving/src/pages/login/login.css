@@ -10,12 +10,8 @@
 }
 
 .password {
+  margin-top: 20px;
   margin-bottom: 150px;
   font-size: 13px;
-  text-decoration: underline;
-}
-
-.newdonor {
-  font-size: 22px;
   text-decoration: underline;
 }

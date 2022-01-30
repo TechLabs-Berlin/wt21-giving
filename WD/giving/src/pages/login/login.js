@@ -13,13 +13,11 @@ const login = () => {
             </div>
             <Textfield3 text='Email' />
             <Textfield3 text='Password'/>
-            <Button text='Log In' />
+            <Link to={`/payment`}>
+                <Button text='Log In' width={302}/>
+            </Link>
             <div className='password'>
                 <p>Forgot password?</p>
-            </div>
-            <p>A New Donor?</p>
-            <div className='newdonor'>
-                <p>Sign Up</p>
             </div>
         </div>
     );
