@@ -1,19 +1,27 @@
-.intropage {
-  text-align: center;
-}
-.intro-logo {
-  margin-top: 30px;
-  margin-bottom: 10px;
+* {
+  max-width: 400px;
+  margin: auto;
 }
 
-.fakepicture {
-  color: grey;
-  margin-top: 50px;
+.intropage {
+  text-align: center;
+  background-color: rgba(234, 247, 255, 1);
+  font-family: "Public Sans", sans-serif;
+  color: darkblue;
+}
+.intro-logo {
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+
+.WorldLogo {
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .slider-circles {
-  margin: 10px;
-  margin-bottom: 40px;
+  padding-bottom: 10px;
+  padding-top: 20px;
   box-sizing: border-box;
   display: inline-flex;
   justify-content: space-between;
@@ -25,5 +33,10 @@
   display: inline-flex;
   text-align: center;
   margin: 10px;
-  color: grey;
+  color: #2d9cdb;
+}
+
+.introbutton {
+  padding-top: 20px;
+  padding-bottom: 70px;
 }

@@ -1,9 +1,8 @@
 .textfield-2 {
     font-family: "Public Sans", sans-serif;
-    color: grey;
     letter-spacing: 0.5px;
     margin: 10px;
     padding: 5px;
-    background-color: lightgray;
     border-radius: 20px;
+    border:#ff9045 1px solid;
 }

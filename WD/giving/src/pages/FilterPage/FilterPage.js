@@ -46,14 +46,17 @@ const CategorieListe = ({name}) => {
     <ul>
         <Header />
         <h3>Filter by category</h3>
+
         {list.map(item => (
             <li key={item.id}>
                 <div>{item.name}</div>
             </li>
         ))}
+				
         </ul>
         </div>
 
 
     )};
 export default CategorieListe;
+

@@ -6,20 +6,29 @@
     text-align: center;
 }
 
-.creditcard {
+.visa {
     display: inline-flex;
     text-align: center;
-    margin: 30px;
+    margin: 20px;
+    padding: 5px;
+    border: lightgray 2px solid;
+    border-radius: 10px;
 }
 
 .paypal {
     display: inline-flex;
     text-align: center;
-    margin: 30px;
+    margin: 20px;
+    padding: 5px;
+    border: lightgray 2px solid;
+    border-radius: 10px;
 }
 
-.bank {
+.sepa {
     display: inline-flex;
     text-align: center;
-    margin: 30px;
+    margin: 20px;
+    padding: 5px;
+    border: lightgray 2px solid;
+    border-radius: 10px;
 }

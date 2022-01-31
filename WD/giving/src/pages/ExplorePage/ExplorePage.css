@@ -1,0 +1,20 @@
+.ExplorePage {
+  font-family: "Public Sans", sans-serif;
+  color: grey;
+  text-align: center;
+}
+
+p {
+  margin: 10px;
+  font-size: 18px;
+}
+.Filter {
+  color: #4f4f4f;
+}
+
+.h3 {
+  font-family: SF Pro;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}

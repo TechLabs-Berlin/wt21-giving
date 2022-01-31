@@ -1,18 +1,23 @@
 import React from 'react';
-import Logo from '../../components/logo/Logo';
 import Button from '../../components/button/Button';
 import {Link} from 'react-router-dom';
 import './intro.css';
-import { BsCircle, BsFillCircleFill, BsFileImage } from 'react-icons/bs';
+import { BsCircle, BsFillCircleFill } from 'react-icons/bs';
 import GivingLogo from '../../components/logo/pictures/GIVING_V2-svg.svg';
+import WorldLogo from '../../components/logo/pictures/Asset4.svg';
 
 const intro = () => {
     return (
         <div className='intropage'>
             <div className='intro-logo'>
-                <img src={GivingLogo} style={{ height: 100, width: 250 }} alt="React Logo" />
+                <img src={GivingLogo} style={{ height: 70, width: 250 }} alt="React Logo" />
             </div>
-            <BsFileImage className='fakepicture' size="350px"/>
+            <div className='WorldLogo'>
+                <img src={WorldLogo} style={{ height: 200, width: 450 }} alt="World Logo" />
+            </div>
+            <h3>Make donating easier</h3>
+            <br />
+            <p>Donate to trusted <br /> charities Germany-wide <br /> and internationally with <br /> only several clicks</p>
             <br />
             <div className='slider-circles'>
                 <div className='single-circle'>
@@ -28,9 +33,11 @@ const intro = () => {
                     <BsCircle />
                 </div>
             </div>
+            <div className='introbutton'>
             <Link to={`/signup`}>
                 <Button text='Get Started'/>
             </Link>
+            </div>
         </div>
     );
 };

@@ -1,0 +1,62 @@
+.footer {
+  text-align: center;
+  border-top: 0.5px solid #828282;
+}
+.footer-container {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  background: white;
+}
+
+.events-logo {
+  display: inline-flex;
+  text-align: center;
+  color: #828282;
+  padding-right: 10px;
+}
+.events-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #828282;
+}
+
+.organisations-logo {
+  display: inline-flex;
+  text-align: center;
+  color: #828282;
+  padding-right: 10px;
+}
+
+.organisations-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #828282;
+}
+
+.feeds-logo {
+  display: inline-flex;
+  text-align: center;
+  color: #828282;
+  padding-right: 10px;
+}
+
+.feeds-text {
+  font-family: Roboto;
+  font-style: normal;
+}

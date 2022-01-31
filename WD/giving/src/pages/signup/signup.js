@@ -21,7 +21,6 @@ const signup = () => {
                     <Textfield1 title='City'/>
                     <Textfield1 title='Country'/>
                     <br />
-                    <br />
                     <Textfield1 title='Username'/>
                     <Textfield1 title='Email'/>
                     <Textfield1 title='Password'/>
@@ -29,8 +28,8 @@ const signup = () => {
                 </label>
             </form>
             < br />
-            <Link to={`/payment`}>
-                <Button text='Continue'/>
+            <Link to={`/login`}>
+                <Button text='Continue' width={250}/>
             </Link>
             </div>
         </div>

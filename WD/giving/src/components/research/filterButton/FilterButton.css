@@ -1,0 +1,7 @@
+.adjustment {
+  display: inline-flex;
+  text-align: right;
+  margin: 30px;
+  color: #4f4f4f;
+  flex: 1;
+}
