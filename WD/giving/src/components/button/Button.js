@@ -1,17 +1,18 @@
 import React from 'react'
 import './Button.css'
 
-const Button = ({color, text}) => {
+const Button = ({color, text, width}) => {
     return (
         <div className='container'>
-            <button style={{ backgroundColor: color }} >{text}</button> 
+            <button style={{ backgroundColor: color, width: width }} >{text}</button> 
         </div>
     );
 };
 
 Button.defaultProps = {
     text: 'Continue',
-    color: 'grey',
+    color: '#ff9045',
+    width: '220px',
 }
 
 export default Button;

@@ -13,8 +13,9 @@ const payment = () => {
             <Link to={`/signup`}>
                 <Header />
             </Link>
-            < br />
-            <h3>Add Payment Method</h3>
+            <div className='paymentheader'>
+            <p>Add Payment Method</p>
+            </div>
             <div className='paymenticons'>
                 <Paymenticons />
             </div>
@@ -35,7 +36,7 @@ const payment = () => {
                 </div>
             </div>
             <Link to={`/login`}>
-                <Button text='Add Payment Method and Sign in'/>
+                <Button text='Add Payment Method' width={300}/>
             </Link>
             <Link to={`/login`}>
                 <button className='skip'>Skip for now</button>
