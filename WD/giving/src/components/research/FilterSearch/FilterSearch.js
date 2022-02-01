@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import firebase from 'firebase';
+import Firebase from 'firebase';
 import { BsSearch } from "react-icons/bs"
 import SearchList from '../SearchList';
 import Scroll from '../scroll';
 
 function FilterSearch({ details }) {
 
-    const [name, setName] = useState('name');
+    const [name, setName] = useState('');
     const [searchShow, setSearchShow] = useState(false);
     
 const filteredName = details.filter(
