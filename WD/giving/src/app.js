@@ -5,7 +5,8 @@ import Payment from './pages/payment/payment';
 import Intro from './pages/intro/intro';
 import Login from './pages/login/login';
 import ExplorePage from './pages/ExplorePage/ExplorePage';
-import FilterPage from './pages/FilterPage/FilterPage'
+import FilterPage from './pages/FilterPage/FilterPage';
+import Donation from './pages/donation/donation'
 
 const app = () => {
     return (
@@ -14,11 +15,10 @@ const app = () => {
             <Route path="/" element={<Intro />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/payment" element={<Payment />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/explorePage" element={<ExplorePage />} />
-                <Route path="/filterPage" element={<FilterPage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/explorePage" element={<ExplorePage />} />
+            <Route path="/filterPage" element={<FilterPage />} />
+            <Route path="/donation" element={<Donation />} />
         </Routes>
         </BrowserRouter>
     );

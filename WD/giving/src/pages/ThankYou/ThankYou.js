@@ -6,7 +6,7 @@ import SocialFollow from '../../components/SocialFollow/SocialFollow'
 import Textfield3 from '../../components/textfield3/Textfield3'
 import { ImageBackground, Text, View } from "react-native";
 
-const image = { FotoOrganisation };
+//const image = { FotoOrganisation };
 
 const ThankYou = () => {
     return (
