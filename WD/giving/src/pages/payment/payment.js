@@ -35,10 +35,10 @@ const payment = () => {
                     </div>
                 </div>
             </div>
-            <Link to={`/login`}>
+            <Link to={`/explorePage`}>
                 <Button text='Add Payment Method' width={300}/>
             </Link>
-            <Link to={`/login`}>
+            <Link to={`/explorePage`}>
                 <button className='skip'>Skip for now</button>
             </Link>
         </div>

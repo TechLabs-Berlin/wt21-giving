@@ -1,0 +1,33 @@
+.donation-page {
+    font-family: "Public Sans", sans-serif;
+}
+
+.donation-anonym, .donation-memory {
+    margin: 7px;
+    margin-left: 30px;
+}
+
+.donation-frequency, .donation-amount {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.donation-payment {
+    text-align: center;
+}
+
+.donation-checkbox {
+    text-align: left;
+}
+
+.donation-amount {
+    margin: 10px;
+}
+
+.amount {
+    margin: 10px;
+    padding: 5px;
+}
