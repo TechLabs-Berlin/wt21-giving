@@ -1,25 +1,18 @@
 import React from 'react'
 
-const Name = ({ item }) => {
+const Name = ({ organisation }) => {
     return (
         <div className='card'>
-            <div className='card-inner'>
-                <div className='card-front'>
-                    <img src={item.img} alt={item.name}></img>
-                </div>
-                <div className='card-back'>
-                    <h1>{item.name}</h1>
+                    <h1>{organisation.name}</h1>
                     <ul>
                         <li>
-                            <strong>Name : </strong>{item.name}
+                            <strong>Name : </strong>{organisation.name}
                         </li>
                         <li>
-                            <strong>Description </strong>{item.Description}
+                            <strong>Description </strong>{organisation.Description}
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
     );
 }
 export default Name;

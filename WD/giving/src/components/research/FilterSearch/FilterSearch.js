@@ -4,11 +4,15 @@ import { BsSearch } from "react-icons/bs"
 import SearchList from '../SearchList';
 import Scroll from '../scroll';
 
-function FilterSearch({ details }) {
-
+function FilterSearch ({ details }) {
     const [name, setName] = useState('');
     const [searchShow, setSearchShow] = useState(false);
-    
+
+    const ref = Firebase.database.ref('giving-e14dd-default-rtdb')
+    ref.on('value', (snapshot) => {
+      setName(snapshot.val())
+    });
+
 const filteredName = details.filter(
         organisation => {
           return (
@@ -34,16 +38,6 @@ const filteredName = details.filter(
           }
         };
     
-        function searchList() {
-            if (searchShow) {
-                return (
-                    <Scroll>
-                        <SearchList filteredName={filteredName} />
-                    </Scroll>
-                );
-            }
-        }
-
     
       
     return (
@@ -64,7 +58,8 @@ const filteredName = details.filter(
             </div>
             <div className>
             <section className='cards'>
-            {searchList()}
+                    <SearchList />
+                    <Scroll />
                         </section>
             </div>
         </>
