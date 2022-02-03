@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Firebase from 'firebase';
+// import Firebase from 'firebase';
 import { BsSearch } from "react-icons/bs"
 import SearchList from '../SearchList';
 import Scroll from '../scroll';
@@ -8,10 +8,10 @@ function FilterSearch ({ details }) {
     const [name, setName] = useState('');
     const [searchShow, setSearchShow] = useState(false);
 
-    const ref = Firebase.database.ref('giving-e14dd-default-rtdb')
-    ref.on('value', (snapshot) => {
-      setName(snapshot.val())
-    });
+    // const ref = Firebase.database.ref('giving-e14dd-default-rtdb')
+    // ref.on('value', (snapshot) => {
+    //   setName(snapshot.val())
+    // });
 
 const filteredName = details.filter(
         organisation => {
