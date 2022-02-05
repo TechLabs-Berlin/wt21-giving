@@ -1,65 +1,57 @@
-import React, { useState } from 'react';
-// import Firebase from 'firebase';
-import { BsSearch } from "react-icons/bs"
+import React, { useState, useEffect } from 'react';
+import firebase from '../../../Firebase';
 import SearchList from '../SearchList';
-import Scroll from '../scroll';
+import './FilterSearch.css'
+import { BsSearch } from 'react-icons/bs';
 
-function FilterSearch ({ details }) {
-    const [name, setName] = useState('');
-    const [searchShow, setSearchShow] = useState(false);
+function FilterSearch() {
+  const [OrganisationList, setOrganisationList] = useState({});
+  const [NameList, setNameList] = useState()
+  const [searchShow, setSearchShow] = useState(false);
+  const [FilteredOrganisationList, setFilteredOrganisationList] = useState([]);
 
-    // const ref = Firebase.database.ref('giving-e14dd-default-rtdb')
-    // ref.on('value', (snapshot) => {
-    //   setName(snapshot.val())
-    // });
+  useEffect(() => {
+    const dbRef = firebase.database().ref();
+    const ref = dbRef.child('organisationList');
+    ref.on('value', (snapshot) => {
+      const snapshotValue = snapshot.val()
+      console.log(snapshotValue)
+      setOrganisationList(snapshotValue)
+      setFilteredOrganisationList(Object.values(snapshotValue))
+    });
+  } , [])
 
-const filteredName = details.filter(
-        organisation => {
-          return (
-            organisation
-            .name
-            .toLowerCase()
-            .includes(name.toLowerCase()) ||
-            organisation
-            .description
-            .toLowerCase()
-            .includes(name.toLowerCase())
-          );
-        }
-      );
+  const handleChange = e => {
+    setNameList(e.target.value);
+    setFilteredOrganisationList(Object.values(OrganisationList).filter(organisation => organisation.name.toLowerCase().includes(e.target.value.toLowerCase())))
+        if (e.target.value === "") {
+      setSearchShow(false);
+    }
+    else {
+      setSearchShow(true);
+    }
+  }
 
-    const handleChange = e => {
-        setName(e.target.value);
-        if(e.target.value===""){
-            setSearchShow(false);
-        }
-        else {
-            setSearchShow(true);
-          }
-        };
-    
     
       
     return (
         <>
-            <div className="SearchBar">
+        <div className="SearchBar">
+          <div className="Search">
                 <input
-                    onChange={event => setName(event.target.value)}
-                    type="text"
-                    name="searchBar"
-                    value={name}
-                    id="searchBar"
-                    onChange = {handleChange}
-                    className="textfield"
-                    size="medium"
-                />
-                <br></br>
-                <BsSearch />
+            type="text"
+            value={NameList}
+            placeholder={'Search by name'}
+            id="searchBar"
+              onChange={handleChange}
+            />
+            <label className='loup'><BsSearch/></label>
             </div>
+            
+        </div>
             <div className>
             <section className='cards'>
-                    <SearchList />
-                    <Scroll />
+                    <SearchList filteredNames={FilteredOrganisationList} />
                         </section>
             </div>
         </>

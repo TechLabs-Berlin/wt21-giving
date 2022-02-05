@@ -1,28 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import Firebase from '../firebase'
-import '/OrganisationInfo.css'
+import firebase from '../../../Firebase'
 
 
 const OrganisationName = (props) => {
-    const [OrganisationName, setOrganisationName] = useState();
+    const [NameList, setNameList] = useState()
     useEffect(() => {
-        const OrganisationNameRef = Firebase.database().ref('giving-e14dd-default-rtdb');
-        OrganisationNameRef.on('value', (snapshot) => {
-            const OrganisationNames = snapshot.val();
-            const OrganisationName = []
-            for (let id in OrganisationNames) {
-                OrganisationName.push({id, ...OrganisationNames[id] });
-            }
-            setOrganisationName(OrganisationName);
-        })
-    }, [])
+        const dbRef = firebase.database().ref();
+        const ref = dbRef.child('NameList');
+        ref.on('value', (snapshot) => {
+          const snapshotValue = snapshot.val()
+          console.log(snapshotValue)
+          setNameList(snapshotValue)(Object.values(snapshotValue))
+        });
+      } , [])
+    
 
     return (
-        <>
         <div className='OrganisationName'>
-                <OrganisationName name={props.name} />
+                <OrganisationName name={props.NameList} />
             </div>
-            </>
     );
 }
 
