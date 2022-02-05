@@ -1,13 +1,11 @@
 import React from 'react';
 import Header from '../../components/header/header'
 import Button from '../../components/button/Button';
-import '/FotoOrganisation.js';
 import {Link} from 'react-router-dom';
 import SocialFollow from '../../components/SocialFollow/SocialFollow'
 import Textfield3 from '../../components/textfield3/Textfield3'
 import { ImageBackground, Text, View } from "react-native";
 
-//const image = { FotoOrganisation };
 
 const ThankYou = () => {
     return (
@@ -28,9 +26,9 @@ const ThankYou = () => {
         </div>
         
         <div className='backto'>
-            <Link to={`/Organisation`}>
+            {/* <Link to={`/Organisation`}>
                 <Button text='Back to Organisation Page'/>
-            </Link>
+            </Link> */}
             </div>
             <div className='Share'>
             <SocialFollow />

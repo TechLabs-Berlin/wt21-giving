@@ -2,21 +2,20 @@ import React from 'react';
 import Header from '../../components/header/header'
 import { Link } from 'react-router-dom';
 import Button from '../../components/button/Button';
+import OrganisationName from '../../components/OrganisationInfo/NameOrganisation/OrganisationName';
 
 const OrganisationPage = () => {
-
     return (
         <div classeName='organisationpage'>
             <Header />
             <br />
-            <img className='FotoOrganisation' alt='LogoOrganisation' />
             <div className='organisation-name'>
+                <OrganisationName />
                 <text src='www.organisationwebsite.com' alt="organisationWebsite" />
                 <div className='organisationinfos'>
                 </div>
-            </div>
-        
-            <Link to={`/DonationPage`}>
+            </div>    
+            <Link to={`/donation`}>
                 <Button text='Donate' />
             </Link>
             <div className='socialfollow'>

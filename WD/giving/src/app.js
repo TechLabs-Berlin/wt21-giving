@@ -21,7 +21,7 @@ const app = () => {
             <Route path="/explorePage" element={<ExplorePage />} />
             <Route path="/filterPage" element={<FilterPage />} />
                 <Route path="/donation" element={<Donation />} />
-                <Route path="/organisation" element={<Organisation />} />
+                <Route path="/organisation/:id" element={<Organisation />} />
         </Routes>
         </BrowserRouter>
     );

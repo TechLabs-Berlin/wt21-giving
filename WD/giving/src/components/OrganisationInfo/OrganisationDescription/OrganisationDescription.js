@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import Firebase from '../firebase'
+import Firebase from '../../../Firebase'
 import '/OrganisationInfo.css'
 
 
 const OrganisationDescription = (props) => {
     const [OrganisationDescription, setOrganisationDescription] = useState();
     useEffect(() => {
-        const OrganisationDescriptionRef = Firebase.database().ref('giving-e14dd-default-rtdb');
-        OrganisationDescriptionRef.on('value', (snapshot) => {
+        const OrganisationDescriptionRef = Firebase.database().ref('giving-e14dd-default-rtdb/description');
+        OrganisationDescriptionRef.on('description', (snapshot) => {
             const OrganisationDescriptions = snapshot.val();
             const OrganisationDescription = []
             for (let id in OrganisationDescriptions) {
