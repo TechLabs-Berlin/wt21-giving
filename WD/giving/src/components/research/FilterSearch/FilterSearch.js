@@ -9,7 +9,7 @@ import Scroll from '../scroll'
   
 function FilterSearch() {
   const [OrganisationList, setOrganisationList] = useState({});
-  const [NameList, setNameList] = useState()
+  const [NameList, setNameList] = useState();
   const [searchShow, setSearchShow] = useState(false);
   const [FilteredOrganisationList, setFilteredOrganisationList] = useState([]);
 

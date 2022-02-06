@@ -1,0 +1,15 @@
+.Filterpage {
+  font-family: "Public Sans", sans-serif;
+  color: black;
+  text-align: left;
+}
+.filter {
+  text-align: left;
+  font-size: 10px;
+  line-height: 24px;
+}
+
+.filter-list {
+  line-height: 21px;
+  font-size: 9px;
+}

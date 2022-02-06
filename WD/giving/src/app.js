@@ -7,7 +7,8 @@ import Login from './pages/login/login';
 import ExplorePage from './pages/ExplorePage/ExplorePage';
 import Organisation from './pages/Organisation/Organisation';
 import FilterPage from './pages/FilterPage/FilterPage';
-import Donation from './pages/donation/donation'
+import Donation from './pages/donation/donation';
+import ThankYou from './pages/ThankYou/ThankYou';
 
 
 const app = () => {
@@ -22,6 +23,7 @@ const app = () => {
             <Route path="/filterPage" element={<FilterPage />} />
                 <Route path="/donation" element={<Donation />} />
                 <Route path="/organisation/:id" element={<Organisation />} />
+                <Route path="/ThankYou" element={<ThankYou />} />
         </Routes>
         </BrowserRouter>
     );

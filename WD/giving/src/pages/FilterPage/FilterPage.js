@@ -1,9 +1,10 @@
-import React, { useState }  from 'react';
+import React, { Component } from 'react';
 import Header from '../../components/header/header';
-
-
-const categoryName = [
-{
+import Button from '../../components/button/Button';
+import './FilterPage.css';
+class List extends Component {
+    categories = [
+        {
             ID: 1, name: 'Animals'
         },
         {
@@ -36,21 +37,33 @@ const categoryName = [
         {
             ID: 11, name: 'Research and Public Policy'
         }
-]
+    ];
+ 
+    categoryList = this.categories.map(category => (
+        <Category name={category.name} />
+    ));
 
-function CategorieListe() {
-    const [setName, setSearchName] = useState(categoryName);
-
+    render() {
+        return (
+            <div className='Filterpage'>
+                <Header />
+                <div className='filter'>
+                <h2>Filter by category</h2>
+                </div>
+                <div className='filter-list'>
+                    {this.categoryList}
+                </div>
+                <Button text='Apply'/>
+                </div>
+        );
+    }
+}
+const Category = props => {
     return (
-        <div className='Filterpage'>
-            <Header />
-            <label>Select a category:</label>
-            <ul>
-                {setName.map(categoryName => {
-                    return <li key={categoryName}></li>})}
-                </ul>
+        <div className="Filterpage">
+            {props.name}
         </div>
     );
-};
-export default CategorieListe;
-
+}
+         
+export default List;
