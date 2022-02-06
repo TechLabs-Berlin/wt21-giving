@@ -18,6 +18,21 @@ First we decided to work with Charity Navigator API (https://www.charitynavigato
 ### DZI Data
 
 The data we got scrapped from the DZI webpage (https://www.dzi.de/organisation/?keyword=&cat=5) were several json files for each organisation. To create a dataframe with all organisations we used the code in the file Combine_Json_files. The challenge was to go through every file of the 230 organisations. Zubin helped us in the end to create the data frame. The data frame itself needed some further cleaning as nearly all columns were object types, even those containing numbers.
+There were two sources to get Data from: Charity Navigator (US) and DZI (Deutsches Zentralinstitut für soziale Fragen, German). Charity Navigator offered an API to get data, for DZI we needed to scrap the data (thanks to Max and Zubin). The files we got from the API were quite hard to format to a clean data frame so in the end we found a clean data frame in Kaggle. 
+
+## Cleaning Data
+Once we had the data in a readable format for us (json and csv) 
+First we imported the data in Jupyter notebook, imported Pandas and NumPy libraries and proceed to analyzed the type of data and information we wanted to work with and the columns we consider relevant for the project.
+Base on it we created a data frame and continue to eliminate the columns we would not work for our project. We reorder the columns by the importance of the necessary data for the project and rename some columns, then we check there was no duplicate, or incomplete data within our data frame. It was also necesary to check and clean empty rows in the file, in some cases the rows were not with the complete information for in which case we decided to eliminate the whole row. 
+
+
+### Charity Navigator
+
+First we decided to work with Charity Navigator API (https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=1397) but in order to get the data we had to pay subscription to the API so then we try scrapp some data but it was still dificult in our level. The API offers some free data as a try but we notice that the free data offered was not enought for what we were looking for the porject. We follow mentor advise and we found a satisfactory data base in Kaggle.
+
+### DZI Data
+
+The data we got scrapped from the DZI webpage (https://www.dzi.de/organisation/?keyword=&cat=5) were several json files for each organisation. To create a dataframe with all organisations we used the code in the file Combine_Json_files. The challenge was to go through every file of the 230 organisations. Zubin helped us in the end to create the data frame.
 
 ## Explorative Data Analytics
 
@@ -83,7 +98,8 @@ After that we used a pre-tained model and applied it to the descriptions, retrie
 
 To connect the data with the frontend of our app we decided to use Firebase. Therefor with the help of our mentor we prepared the data and imported it (see import_data_to_firebase.py). For the app we used the data of Charity Navigator as it offers better usability for our purpose. To further improve the project from DS point of view the integration of the data in the app should have been connected earlier and better. In the beginning we discussed possible use of data to integrate to the app but throughout the project didn't focus on implementing Machine Learning or Data Analytics results in the app yet due to a lack of time.
 
-## Python Libraries used
+## Libraries used
+
 
 * Pandas
 * Numpy

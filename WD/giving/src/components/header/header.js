@@ -11,7 +11,7 @@ const header = () => {
                 <IoIosArrowBack size={30}/>
             </div>
             <div className='header-logo'>
-                <img src={GivingLogo} style={{ height: 80, width: 220 }} alt="React Logo" />
+                <img src={GivingLogo} style={{ height: 70, width: 200 }} alt="React Logo" />
             </div>
         </div>
         </div>

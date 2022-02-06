@@ -1,32 +1,35 @@
 import React from 'react';
 import Header from '../../components/header/header'
 import Button from '../../components/button/Button';
-import '/FotoOrganisation.js';
+import {Link} from 'react-router-dom';
 import SocialFollow from '../../components/SocialFollow/SocialFollow'
 import Textfield3 from '../../components/textfield3/Textfield3'
 import { ImageBackground, Text, View } from "react-native";
 
-const image = { FotoOrganisation };
 
 const ThankYou = () => {
     return (
         <div className='thankyoupage'>
-            <div className='thankyouheader'>
-            <Header />
-            </div>
+            <Link to={`/explorePage`}>
+                <Header />
+            </Link>
             <div className='thankyou-picture'>
              <View style={styles.container}>
             <ImageBackground source={image} resizeMode="cover" style={styles.image}>
             <Text style={styles.text}>Thank you for your donation</Text>
              </ImageBackground>
              </View>
-            </div>
-            
-            <Link to={`/Organisation`}>
+        </div>
+        
+        <div className='donate-summe'>
+          <input text='summe' /> Your one-off donation of € 1,00 has been processed
+        </div>
+        
+        <div className='backto'>
+            {/* <Link to={`/Organisation`}>
                 <Button text='Back to Organisation Page'/>
-            </Link>
-            <Button />
-            
+            </Link> */}
+            </div>
             <div className='Share'>
             <SocialFollow />
             </div>
