@@ -1,7 +1,16 @@
 .thankyoupage {
   font-family: "Public Sans", sans-serif;
+  text-align: center;
 }
 
+.donate-summe {
+  white-space: pre-line;
+}
+p {
+  text-indent: 50px;
+  line-height: 5;
+  white-space: nowrap;
+}
 .donate-summe {
   text-align: center;
   margin: 10px;

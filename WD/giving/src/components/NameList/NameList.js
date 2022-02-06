@@ -1,20 +1,13 @@
 import React from 'react';
 
-const NameList = ({nameList=[]}) => {
-  return (
-    <>
-    { nameList.map((data,index) => {
-        if (data) {
-          return (
-            <div key={data.name}>
-              <h1>{data.name}</h1>
-	    </div>	
-    	   )	
-    	 }
-    	 return null
-    }) }
-    </>
-  );
-}
+const NameList = props => {
+  const names = props.names.map(names => {
+    return <div>
+      <names key={names}></names>
+    </div>
+  });
+
+return <div>{names}</div>
+};
 
 export default NameList

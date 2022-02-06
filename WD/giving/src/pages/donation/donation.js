@@ -48,7 +48,7 @@ const donation = () => {
                 <input type="checkbox" className='donation-memory'/>
                 Dedicate my donation in memory of someone
             </label>
-            <Link to={`/explorePage`}>
+            <Link to={`/ThankYou`}>
                 <Button text='Donate' />
             </Link>
         </div>
