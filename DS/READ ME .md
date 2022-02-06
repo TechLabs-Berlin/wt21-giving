@@ -19,3 +19,12 @@
 3.Top_10_Charities: This folder contains a file where there´s the top 10 charities from all the general data base, no categories distinction only selected by the highest scores (100).
 
 4.This folder contains the Jupyter notbook files where the original data base was analyzed, cleaned, and organized in order to create our own data frame for the project. 
+
+Files: 
+
+DZI_Data_Analytics: contains all analytics from DZI. Raw data can't be uploaded.
+data_analytics_charities: contains all analytics from Charity Navigator. Raw data available in The Charity Navigator folder
+ML_Predict_Category: Code for Machine Learning Algorithm to predict category by description
+ML_Recommendation_Model: Code for Machine Learning Algorith to recommend charities to user
+Import_data_to_firebase: Code that was used to update data on Firebase 
+
