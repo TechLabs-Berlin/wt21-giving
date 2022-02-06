@@ -1,9 +1,6 @@
 import pandas as pd
 import numpy as np
-from nltk.stem import WordNetLemmatizer
-from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-import re
 from spacy.lang.en.stop_words import STOP_WORDS
 df = pd.read_csv("/Users/Mariane/Documents/Giving/charity_data.csv")
 df.head()
