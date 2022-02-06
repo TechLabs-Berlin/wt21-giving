@@ -6,5 +6,10 @@
 
 [User Survey/ Typeform] (https://6i1jk92ztuf.typeform.com/report/MX5EDRHV/8ArFWPXv5LUcUZYU)
 
+[User Survey/ Google Docs - Indonesian Version] (https://forms.gle/jzec5sPKo1377Gii9)
+
+[User Survey/ Google Docs - English Version] (https://forms.gle/jsTQgBnRWajhUJiS8)
 
 [User Story/ Google Doc]  (https://docs.google.com/document/d/17xk7LRcN_nMXOodhNYZHp5QWEwCKYn4PJ9eELifJhco/edit?usp=sharing)
+
+[User Flow is available in Figma]
