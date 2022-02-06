@@ -10,6 +10,10 @@
 
 [User Survey/ Google Docs - English Version] (https://forms.gle/jsTQgBnRWajhUJiS8)
 
+[User Survey/ Result] (https://drive.google.com/drive/folders/114CdIxOZFsYxVfZgbKHDTFc15AejsRbr?usp=sharing)
+
 [User Story/ Google Doc]  (https://docs.google.com/document/d/17xk7LRcN_nMXOodhNYZHp5QWEwCKYn4PJ9eELifJhco/edit?usp=sharing)
 
-[User Flow is available in Figma]
+[Giving logos] (https://drive.google.com/drive/folders/1n8N6iDZtj4E_oQc_iWEFZuV2330lbguj?usp=sharing)
+
+[User Flow is available in Figma > Branding, Component, User Flow]
