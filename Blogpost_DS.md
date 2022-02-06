@@ -2,7 +2,7 @@
 
 ## Get Data Set
 
-There were two sources to get Data from: Charity Navigator (US) and DZI (Deutsches Zentralinstitut für soziale Fragen, German). Charity Navigator offered an API to get data, for DZI we needed to scrap the data (thanks to Max and Zubin). The files we got from the API were quite hard to format to a clean data frame so in the end we found a clean data frame in Kaggle. 
+There were two sources to get the data we need from: Charity Navigator (US) and DZI (Deutsches Zentralinstitut für soziale Fragen DZI, German). Charity Navigator offered an API to get data, for DZI we needed to scrap the data (thanks to Max and Zubin). The files we got from the API were quite hard to format to a clean data frame so in the end we found a clean data frame in Kaggle. 
 
 ## Cleaning Data
 
@@ -17,15 +17,29 @@ First we decided to work with Charity Navigator API (https://www.charitynavigato
 
 ### DZI Data
 
-The data we got scrapped from the DZI webpage (https://www.dzi.de/organisation/?keyword=&cat=5) were several json files for each organisation. To create a dataframe with all organisations we used the code in the file Combine_Json_files. The challenge was to go through every file of the 230 organisations. Zubin helped us in the end to create the data frame.
+The data we got scrapped from the DZI webpage (https://www.dzi.de/organisation/?keyword=&cat=5) were several json files for each organisation. To create a dataframe with all organisations we used the code in the file Combine_Json_files. The challenge was to go through every file of the 230 organisations. Zubin helped us in the end to create the data frame. The data frame itself needed some further cleaning as nearly all columns were object types even those containing numbers.
 
 ## Explorative Data Analytics
 
 We used pandas and numpy to make some statistical analysis of the data set from Charity Navigator and DZI. 
-We initially explore the data by creating a data frame and then visualizing the type f data we had, then the number of rows and columns and the content of every column. We also play with some code in order to just make use of what we learned in the previous phase.
+We initially explore the data by creating a data frame and then visualizing the type of data we had, then the number of rows and columns and the content of every column. We also play with some code in order to just make use of what we learned in the previous phase.
 We use conditional function in order to get the highest scores from charities in different categories. (See procees in "Giving Data Cleaning and Analysis.ipyn" file)
 We investigated and created boxplots for different categories like scores by categories. (see results and interpreations in Jupyter Notebook)
 We decided to extract top ten lists that could be useful for the app like Top ten list for each categories and in total so that the user can find the best scored charities directly.
+
+### Results Charity Navigator Data
+
+You can find all results of the Data Analytics in data_analytics_charities.ipynb. 
+The data set contains 8408 charities. The mean accountability score of all charities is 90.72 (of 100), the mean financial score is 85.7. To discover the range of the scores by Charity categories we created boxplots by charites showing that the outliers with the lowest score can be found in the categories Health, Human Services, Human and Civil Rights and Religion. Also the finding efficiency plays a high roll in the scoring of the charities. Funding efficiency describes how much money is spend to raise 1 $. On average the charities spend 0.10 $ to raise 1 $.
+Mean total revenue of all charities are 15,827,234.05 $. Most charities range between 0 and 10,000,000 $ with 4 big outliers with the highest financial resources including American Red Cross, Feeding America, Americarers and Dana Faber Cancer Institute.
+In addition we also applied some analytics for text data for the description resulting that most used words in descriptions are community, people, mission, children, families and education which indicates the focus of the different charities.
+
+### Results DZI
+
+You can find all results of the Data Analytics in DZI_data_analyics.ipynb.
+For DZI there were way less numerical data to analyze or it needed further cleaning. The data set contains 230 charities. There is no scoring system like for the US charities in place as all charities received the DZI certificate.
+The mean total revenues of all charities is 2,747,756,833.73. This includes one big outlier with highest financial resources which is Johanniter Unfallhilfe. 
+With further text analytics of the string data we also could etract the main focus of the charities (children, eductation and development) and in which countries there active (Germany, India, Kenia as top 3)
 
 ## Machine Learning Recommendation System
 
@@ -54,7 +68,7 @@ You find the code to predict the categories from descriptions of the charities i
 
 ### Recommendation Model
 
-For the recommendation model the goal is to recommend the user 3 charities that best fit to a specific query sentence like "Helping animals in a forest". For that we also use Spacy and a pre computed model from en_core_web_lg. Again the data was cleaned first.
+For the recommendation model ("ML_Recommendation_System.py") the goal is to recommend the user 3 charities that best fit to a specific query sentence like "Helping animals in a forest". For that we also use Spacy and a pre computed model from en_core_web_lg. Again the data was cleaned first with the following steps:
 
 * Remove non-alphanumeric character/ punctuation
 * Remove the too long and too short sentences
@@ -62,9 +76,14 @@ For the recommendation model the goal is to recommend the user 3 charities that 
 * Lemmatize
 * Tokenize
 
-This Cleaning Process results in two new columns named "clean_description" and "tok_lem_description"
+This Cleaning Process results in two new columns named "clean_description" and "tok_lem_description". 
+After that we used a pretained model and applied it to the descriptions, retrieved the embedded vectors as matrix and the predict the 3 best matching charities with the model.
 
-## Libraries used
+## Connect Data with Frontend
+
+To connect the data with the frontend of our app we decided to use Firebase. Therefor with the help of our mentor we prepared the data and imported it (see import_data_to_firebase.py). For the app we used the data of Charity Navigator as it offers better usability for our purpose. To further improve the project from DS point of view the integration of the data in the app should have been connected earlier and better. In the beginning we dicussed possible use of data to integrate to the app but throughout the project didn't focus on implementing Machine Learning or Data Analytics results in the app yet due to a lack of time.
+
+## Python Libraries used
 
 * Pandas
 * Numpy
