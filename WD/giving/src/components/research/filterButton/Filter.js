@@ -7,7 +7,7 @@ const filter = () => {
     return (
         <div id='adjustment'>
             <div className='adjustment'>
-                <HiOutlineAdjustments size="30px"
+                <HiOutlineAdjustments size="22px"
                 />
             </div> 
             </div>

@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import firebase from '../../../Firebase';
-import SearchList from '../SearchList';
+import SearchList from '../SearchList/SearchList'
 import './FilterSearch.css'
 import { BsSearch } from 'react-icons/bs';
-
+import Filter from '../filterButton/Filter';
+import { Link } from 'react-router-dom';
+import Scroll from '../scroll'
+  
 function FilterSearch() {
   const [OrganisationList, setOrganisationList] = useState({});
   const [NameList, setNameList] = useState()
@@ -32,12 +35,19 @@ function FilterSearch() {
     }
   }
 
-    
-      
+function filteredOrganisationList() {
+  if (searchShow) {
     return (
-        <>
-        <div className="SearchBar">
-          <div className="Search">
+      <Scroll>
+        <SearchList filteredNames={FilteredOrganisationList} />
+    </Scroll>
+    );
+  }
+}
+    return (
+      <>
+        <div className="wrapper">
+          <div className="search-wrapper">
                 <input
             type="text"
             value={NameList}
@@ -47,13 +57,16 @@ function FilterSearch() {
             />
             <label className='loup'><BsSearch/></label>
             </div>
-            
         </div>
-            <div className>
-            <section className='cards'>
-                    <SearchList filteredNames={FilteredOrganisationList} />
-                        </section>
-            </div>
+
+        <div className='Filter'>
+      <Link to={`/filterpage`}>
+        <Filter />
+      </Link>
+        </div>
+        <div className='cards'>
+          {filteredOrganisationList(FilteredOrganisationList)}
+          </div>
         </>
     );
 };
