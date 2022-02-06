@@ -9,6 +9,10 @@ According to the 2020 Global Trends in Giving Report, 1.817 non-donors responded
 Plenty of world issues that NGOs and NPOs trying to combat are structural problems, which will require structural change and approach from many sides. Donation won’t be the sole solution for all issues. However, funding would be an immense help for nonprofits to keep on helping and tackling important issues in the society. One also does not need to donate a large sum of money to organization in order to make a change. We believe that when people come together and provide help, no matter how small, it can make a big impact. Therefore, we create Giving app with a hope that this platform can help convert non-donors into donors and help donors to donate to charitable organizations in an easy and efficient way.
 This project was created during TechLab Berlin’s Digital Shaper Program winter semester 2021/2022, where 7 women from UX, Web Development, and Data Science tracks all working together in just 7 weeks to build the app from scratch. Our utmost goal is to get people who use our app to donate with just several clicks to different organizations while getting the complete information about the organization itself. With providing our users with organizations vetted by DZI and Charity Navigator, we can assure the users that all the organizations are trustable, transparent, and committed to the cause.
 
+# Project Blog Post
+Besides the Blog Post that have been uploaded here, you can also read our complete Blog Post here:
+https://docs.google.com/document/d/1v28vXBM4LWO7LZ0-24Mz3ZS4DMJ3_fVVdDsYWRBcj3o/edit?usp=sharing
+
 For the Figma prototypes, see: https://www.figma.com/file/lQEbxUbCAkANF8NoClpURx/Giving.app
 
 # Team members
