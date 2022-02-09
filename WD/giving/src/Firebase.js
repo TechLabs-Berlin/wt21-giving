@@ -1,7 +1,6 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBoWHmBxooDcKPR46umHYPeiILk4OgDBKQ",
   authDomain: "giving-e14dd.firebaseapp.com",
   databaseURL: "https://giving-e14dd-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "giving-e14dd",
